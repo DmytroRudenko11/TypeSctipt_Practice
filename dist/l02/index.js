@@ -1,32 +1,29 @@
-var age = 50;
-var someName = "Max";
-var toggle = true;
-var empty = null;
-var notInitialize = undefined;
-var callback;
-callback = function (a) {
+"use strict";
+let age = 50;
+let someName = "Max";
+let toggle = true;
+let empty = null;
+let notInitialize = undefined;
+let callback;
+callback = (a) => {
     return 100 + a;
 };
-// ===========================================================
-var anything = -20;
+let anything = -20;
 anything = "Text";
 anything = {};
-// ===========================================================
-var some;
+let some;
 some = "Text";
-var str;
+let str;
 if (typeof some === "string") {
     str = some;
 }
-// ===========================================================
-var person = ["Max", 21];
-// ===========================================================
+let person = ["Max", 21];
 var Status;
 (function (Status) {
     Status[Status["LOADING"] = 0] = "LOADING";
     Status[Status["READY"] = 1] = "READY";
 })(Status || (Status = {}));
-var page = {
+const page = {
     load: Status.READY,
 };
 if (page.load === Status.LOADING) {
@@ -35,11 +32,8 @@ if (page.load === Status.LOADING) {
 if (page.load === Status.READY) {
     console.log("Here is your page");
 }
-// ===========================================================
-var someValue;
-// ===========================================================
-var someStatus;
-// ===========================================================
+let someValue;
+let someStatus;
 function showMessage(message) {
     console.log(message);
 }
@@ -49,7 +43,7 @@ function calc(num1, num2) {
 function customError() {
     throw new Error("Error");
 }
-var page1 = {
+const page1 = {
     title: "The awesome page",
     likes: 100,
     accounts: ["Max", "Anton", "Nikita"],
@@ -59,9 +53,10 @@ var page1 = {
         updateAt: "2021-05-01",
     },
 };
-var page2 = {
+const page2 = {
     title: "Python or Js",
     likes: 5,
     accounts: ["Alex"],
     status: "close",
 };
+//# sourceMappingURL=index.js.map
